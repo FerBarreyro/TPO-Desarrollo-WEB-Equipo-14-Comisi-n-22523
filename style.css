@@ -13,176 +13,145 @@
 }
 
 
+.logo img{
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 0.5px ;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    width: 220px;
+    border-radius: 0.5rem;
+    
+    
+}
 
+.logo{
+    background:linear-gradient(45deg, rgb(215, 198, 231), lightgreen);
+    background-blend-mode: soft-light;
 
-/*  
-articulos.html{
-    font-size: 65%;
-/* use overFlow que permite que dos secciones no se desborden  
-    overflow: hidden;
+}
+
+.titulo{
+    text-align: center;
+    padding: 10px, 10px;
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 
 
-.bodyp {
-    background-color: #eee ;
 
+img{border-style: inset;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    }
+
+
 
 
 .container{
-    max-width: 1440px;
-    margin: 0 , auto ;
-    padding: 3rem 2rem;
-
-}
-
-
-.container.products-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    padding:15px 9%;
+    padding-bottom: 100px;
     
 }
 
-.container.titulo{
-    font-size: 3.5rem;
-    color: #444;
-    margin-bottom: 3rem ;
-    text-transform: uppercase;
+
+
+.container .heading{
     text-align: center;
-
-    }
-
-
-    .producto>img {
-    object-fit: cover;
-    width: 100%;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
 }
 
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
 
-
-
-
-
-
-
-.container.product-container.producto{
-
-    text-align: center;
-    padding: 3rem 2rem;
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
     background: #fff;
-    box-shadow: 0.5rem 1rem  rgba(0,0,0,0.1);
-    outline: 0.1 solid #ccc;
-    outline-offset: 1.5rem;
-    cursor : pointer
-
+    text-align: center;
+    padding:30px 20px;
 }
 
-/*aca  empiezo a lograr  que se modifique el estilo cuando el cursor esta sobre la foto del producto
+.container .box-container .box img{
+    height: 270px;
+}
 
-.container.products-container.producto:hover{
-    outline: 0.3 rem solid#222;
-    outline-offset: 0 #222;
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box   p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+h4{
+    text-align: left;
 }
 
 
-.container.products-container.producto img{
-    height: 25rem;
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+
+
+.box {
+    overflow: visible
+}
+
+
+
+
+
+
+.container img:focus  {
+    animation: scale-up-center 0.7s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    cursor: pointer;
     
 }
 
-.container.products-container .producto:hover img{
-    transform: scale(0.8);
-
-}
-
-/*aca  empiezo a modificar el titulo y la info de las fotos
 
 
 
-.container .container.products-container .producto h3{
-    padding: 5rem 0;
-    font-size:2rem ;
-    color: #444;
-}
-
-.container .container.product-container .producto:hover h3{
-    color:red
-
-
-}
-
-
-.container .container.product-container .producto .info{
-     font-size:2rem ;
-    color: #444;
-}
-
-
-*/
-
-
-.bodyp {
-    background-color: #eee ;
-
-}
-
-body {
-    margin: 0 auto;
+.box-container img:active  {
+    animation: none;
     
-    padding: 1em 0;
-    justify-content: center;
-    
-  }
-  
-  .grid {
-    /* Grid Fallback */
-    display: flex;
-    flex-wrap: wrap;
-    
-    /* Supports Grid */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1em;
-  }
-
-.grid{
-    justify-content: center;
 }
 
 
-  .producto >img {
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .info >img {
-    object-fit:contain;
-    width: 100%;
-  }
 
 
-
-
-  .module {
-    /* Demo-Specific Styles */
-    background: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    
-    /* Flex Fallback */
-    margin-left: 5px;
-    margin-right: 5px;
-    flex: 1 1 200px;
-  }
-  
-  
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(3);
+    }
+}
