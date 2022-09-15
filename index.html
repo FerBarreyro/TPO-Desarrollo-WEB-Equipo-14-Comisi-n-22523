@@ -4,54 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="Img/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/0a0b671341.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
     <script src="script.js"></script>
     <title>Regulux Lamps</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div id="brand">
-                <h1>REGU<br>LUX</h1>
+    <div class="wrapper">
+        <header class="header">
+            <div id="header__h1">
+                <h1><a class="header__a--h1" href="index.html">REGU<br>LUX</a></h1>
             </div>
-            <ul class="menu flex" >
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a class="#" href="articulos.html">Trabajos </a></li>
-                <li><a class="#" href="acerca.html">Acerca </a></li>
-                <li><a class="#" href="contacto.html">Contacto </a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li" id="header__li--active"><a class="nav__a--nav" href="index.html">Home</a></li>
+                    <li class="header__li"><a class="nav__a--nav" href="articulos.html">Trabajos </a></li>
+                    <li class="header__li"><a class="nav__a--nav" href="acerca.html">Acerca </a></li>
+                    <li class="header__li"><a class="nav__a--nav" href="formulario.html">Formulario </a></li>
+                    <li class="header__li"><a class="nav__a--nav" href="contacto.html">Contacto </a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main class="main">
-        <section class="main-flex">
-                <img src="img/fondos/Imagen-de-lamparas.JPG" alt="imagen portada">
-            <article class="container-1">
-                    <h2>Arte en iluminación</h2>
-                    <p class="#" >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus mattis odio ac vulputate. Pellentesque tincidunt iaculis erat ac varius. Pellentesque ut dictum risus. Aenean sed ultricies sem, sit amet lobortis massa. Duis cursus elementum urna. Suspendisse leo erat, iaculis at massa in, elementum aliquam ex. Duis viverra felis vitae vulputate dapibus. Fusce ultricies lectus diam, laoreet gravida mauris porttitor et. Proin at arcu porttitor, rutrum dolor ut, facilisis purus. Aenean vulputate lorem mattis mattis fermentum. In hac habitasse platea dictumst. Aliquam dictum blandit magna sed laoreet. Donec non nibh non sapien pulvinar facilisis.</p>
-            </article>
-        </section>
-    </main>
+        <main class="main">
+            <section class="main__section">
+                <figure class="main__figure">
+                    <img class="main__img--figure"src="img/fondos/Imagen-de-lamparas.JPG" alt="imagen portada">
+                </figure>
+                <article class="main__article">
+                        <h2 class="main__h2--article">Arte en iluminación</h2>
+                        <p class="main__p--article" >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus mattis odio ac vulputate. Pellentesque tincidunt iaculis erat ac varius. Pellentesque ut dictum risus. Aenean sed ultricies sem, sit amet lobortis massa. Duis cursus elementum urna. Suspendisse leo erat, iaculis at massa in, elementum aliquam ex. Duis viverra felis vitae vulputate dapibus. Fusce ultricies lectus diam, laoreet gravida mauris porttitor et. Proin at arcu porttitor, rutrum dolor ut, facilisis purus. Aenean vulputate lorem mattis mattis fermentum. In hac habitasse platea dictumst. Aliquam dictum blandit magna sed laoreet. Donec non nibh non sapien pulvinar facilisis.</p>
+                </article>
+            </section>
+        </main>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <div>
-                    <h2>REGULUX LAMPS</h2>
+        <footer class="footer">
+                <div class="footer__title">
+                    <h3 class="footer__h3--title">REGULUX LAMPS</h3>
                 </div>
-                <div>
-                    <h5>&copy; 2022 GRUPO 14 desarrollos digitales</h5>
+                <div class="footer__copyright">
+                    <h4 class="footer__h4--copyright">&copy; 2022 GRUPO 14 desarrollos digitales</h4>
                 </div>
-            </div>
-            <div class="social-network">
-                <a href="https://www.instagram.com/reguluxlamps" class="icon icon-instagram" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
-                <a href="#" class="icon icon-pinterest" target="_blank"><i class="fa-brands fa-pinterest fa-1x"></i></a>
-            </div>
-        </div>
-    </footer>
+                <div class="footer__socialnetwork">
+                    <a href="https://www.instagram.com/reguluxlamps" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
+                    <a href="#" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-pinterest fa-1x"></i></a>
+                </div>
+        </footer>
+    </div>
 </body>
 </html>
