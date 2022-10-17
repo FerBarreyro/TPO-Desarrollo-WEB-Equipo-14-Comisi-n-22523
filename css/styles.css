@@ -117,7 +117,7 @@ body{
 }
 
 .main__section{
-    margin: auto;
+    margin: 0 3rem;
     width: auto;
     display: grid;
     /* background-color: aquamarine; */
@@ -125,7 +125,6 @@ body{
 
 .main__figure {
     grid-column: 1 / 2;
-    grid-row: ;
 }
 
 .main__img--figure {
@@ -146,12 +145,12 @@ body{
 }
 
 .main__h2--article{
-    font-size: clamp(1.2rem, 2rem, 2.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     padding: 0 2rem;
 }
 
 .main__p--article{
-    font-size: clamp(0.7rem, 1.5rem , 2rem);
+    font-size: clamp(1rem, 2vw , 1.6rem);
     padding: 0 2rem;
     text-align: justify;
 }
@@ -175,13 +174,6 @@ body{
     padding: 0 2rem;
 }
 
-.footer__h3--title{
-
-}
-
-.footer__h4--copyright{
-
-}
 
 .footer__socialnetwork{
     padding: 0 2rem;
@@ -353,24 +345,41 @@ h4{
     }
 }
 
-/* MAIN fORMULARIO */
+/* MAIN FORMULARIO */
+.main__formulario{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    /* background-color: #dbb876; */
+}
+
 
 .main__form{
+    flex-wrap: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 1rem 3rem;
+    /* padding: 4rem; */
 }
-.formulario-1 h2{
-	font-size: 2rem;
-	text-align: center;
-	/* text-decoration: underline; */
-	width: 100%;
-	max-width: 600px;
-	margin: 1rem;
+
+.formulario-1{
+    margin: 0;
+}
+.formulario-1 h3{
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+	text-align: left;
+	min-width: 600px;
 }
 
 
-#pedido-datos{
+.forumario-1__p{
+    margin: 1.5rem 0;
+    /* padding-left: 1rem; */
 	font-size: 1.5rem;
     text-align: justify ;
 }
@@ -388,27 +397,27 @@ h4{
 	cursor: pointer;
 }
 
-#formulario-horario{
-	font-size: 18px;
+.formulario-6__p{
+	font-size: 1rem;
 }
 
 .formulario-6{
     text-align: center;
 }
 
-.formulario-7 p{
-	font-size: 20px;
+´.formulario-7__p{
+	font-size: 1rem;
 	resize: none;
 }
 
 #texto-formulario{
-
+    padding: 1rem;
 	width: 50rem;
 	height: 10rem;
 	border: 2px solid #ccc;
 	border-radius: 20px;
 	background-color: #f2f2f2;
-	font-size: 16px;
+	font-size: 1rem;
 	resize: none;
 }
 
@@ -459,3 +468,32 @@ h4{
 	color: white;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.23);
 }
+
+.main__nosotros{
+    padding: 1rem 3rem;
+    flex-basis: 999;
+    /* padding: 2rem 3rem; */
+}
+
+.nosotros__h2{
+    margin: 0;
+    padding: 0;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+.nosotros__p{
+    /* margin-right: 6rem; */
+    padding-top: 4rem;
+    font-size: clamp(1rem, 2vw , 1.6rem);
+    text-align: justify;
+}
+
+hr{
+    height: 0.2px;
+    float: left;
+    width: 60%;
+    background-color: black;
+}
+
+
+
+/* MAIN NOSOTROS */
