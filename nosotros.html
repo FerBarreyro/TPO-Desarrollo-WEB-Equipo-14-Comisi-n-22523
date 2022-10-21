@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="Img/favicon-32x32.png">
@@ -11,92 +12,45 @@
 </head>
 
 <body>
-	<div class="wrapper">
-        <header class="header">
-            <div id="header__h1">
-                <h1><a class="header__a--h1" href="index.html">REGU<br>LUX</a></h1>
-            </div>
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li class="header__li" id="header__li--active"><a class="nav__a--nav" href="index.html">Home</a></li>
-                    <li class="header__li"><a class="nav__a--nav" href="articulos.html">Trabajos </a></li>
-                    <li class="header__li"><a class="nav__a--nav" href="nosotros.html">Acerca </a></li>
-                    <li class="header__li"><a class="nav__a--nav" href="contacto.html">Contacto </a></li>
-                </ul>
-            </nav>
-        </header>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div id="header__h1">
+                    <h1><a class="header__a--h1" href="index.html">REGU<br>LUX</a></h1>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li class="header__li" id="header__li--active"><a class="nav__a--nav" href="index.html">Home</a></li>
+                        <li class="header__li"><a class="nav__a--nav" href="articulos.html">Trabajos </a></li>
+                        <li class="header__li"><a class="nav__a--nav" href="nosotros.html">Acerca </a></li>
+                        <li class="header__li"><a class="nav__a--nav" href="contacto.html">Contacto </a></li>
+                    </ul>
+                </nav>
+            </header>
 
-		<main class="main__formulario">
-			<form class="main__form">
-				<div class="formulario-1">
-					<h3>Formulario de Contacto</h3>
-					<hr>
-					<p class="forumario-1__p">Por favor, Ingrese sus datos y envienos su Consulta.</p> <br>
-				</div>
-
-				<div class="formulario-general">
-					<div class="formulario-2">
-						<label for="nombre"> Nombre:</label>
-						<input type="text"  id="nombre" maxlength="50" name="nombre" placeholder="Ingrese su Nombre Aqui">
-					</div> <br>
-
-					<div class="formulario-3">
-						<label for="apellido"> Apellido:</label>
-						<input type="text" id="apellido"  maxlength="50" name="apellido" placeholder="Ingrese su Apellido Aqui">
-					</div> <br>
-
-					<div class="formulario1-4">
-						<label for="contacto">Número de Telefono:</label>
-						<input type="number" id="contacto"  maxlength="50" name="contacto"  placeholder="Ingrese su Número Aqui">
-					</div> <br>
-
-					<div class="formulario-5">
-						<label for="email"> E-mail:</label>
-						<input type="email"  id="email" name="email" placeholder="Ingrese su E-mail Aqui">
-					</div> <br>
-
-					<div class="formulario-6">
-						<p class="formulario-6__p">Seleccione un horario, para que nos comuniquemos telefonicamente:</p>
-						<input type="radio" name="horario" value="mañana"> De 9:00 A 12:00Hs
-						<input type="radio" name="horario" value="mediodia"> De 12:00 A 14:00Hs
-						<input type="radio" name="horario" value="tarde"> De 14:00 A 18:00Hs<br>
-					</div>
-				</div>
-
-				<div class="formulario-7">
-					<p class="formulario-7__p">Escriba su Mensaje:</p>
-					<label for="texto-formulario" > </label>
-					<textarea id="texto-formulario" name="texto-formulario" placeholder="Ingrese su Mensaje Aqui"
-					maxlength="300" ></textarea>
-				</div>
-				<div class="button">
-					<button type="submit" class="button__submit">Enviar</button>
-					<button type="reset" class="button__reset">Borrar</button>
-				</div>
-			</form>
-			<section class="main__nosotros nosotros">
-				<h2 class="nosotros__h2">REGULUX LAMP</h2>
-				<hr>
-				<p class="nosotros__p">Somos una familia que se dedica desde hace decadas a la realización de lamparas artisticas, creemos que la funcionalidad del puede acompañarse de una buena estetica y elegancia. Como decia
-					<br><br>Como decia Vitruvio, los objetos deben realizarse basados en tres principios basicos. La Venustas (belleza), la Firmitas (Firmeza) y la Utilitas (utilidad). Siendo el elemento un equilibrio entre estas tres variables y la ausencia de una de ellas, haria que tal obra no pudiese ser considerada como tal.
-				</p>
-			</section>
-		</main>
-
-        <footer class="footer">
-			<div class="footer__title">
-				<h3 class="footer__h3--title">REGULUX LAMPS</h3>
-			</div>
-			<div class="footer__copyright">
-				<h4 class="footer__h4--copyright">&copy; 2022 GRUPO 14 desarrollos digitales</h4>
-			</div>
-			<div class="footer__socialnetwork">
-				<a href="https://www.instagram.com/reguluxlamps" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
-				<a href="#" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-pinterest fa-1x"></i></a>
-			</div>
-	</footer>
-</div>
-
+            <main class="main__about nosotros">
+                <div class="nosotros__div">
+                    <h2 class="nosotros__h2">ACERCA NUESTRO</h2>
+                    <hr>
+                    <p class="nosotros__p">Somos un equipo colaborativo que se encarga de diseñar, recolectar los materiales y producir las piezas. Creemos que el trabajo unido y en pos de un resultado es importante para el desarrollo de productos de calidad.</p>
+                </div>
+                <figure class="nosotros__figure">
+                    <img class="nosotros__img"src="img/fondos/imagen_persontrabajando.jpg" alt="imagen de persona trabajando">
+                    <img class="nosotros__img"src="img/fondos/imagen_taller.JPG" alt="imagen de escritorio de trabajo">
+                </figure>
+            </main>
+    
+            <footer class="footer">
+                    <div class="footer__title">
+                        <h3 class="footer__h3--title">REGULUX LAMPS</h3>
+                    </div>
+                    <div class="footer__copyright">
+                        <h4 class="footer__h4--copyright">&copy; 2022 GRUPO 14 desarrollos digitales</h4>
+                    </div>
+                    <div class="footer__socialnetwork">
+                        <a href="https://www.instagram.com/reguluxlamps" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
+                        <a href="#" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-pinterest fa-1x"></i></a>
+                    </div>
+            </footer>
+        </div>
 </body>
-</html>
-
