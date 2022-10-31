@@ -1,5 +1,5 @@
-# Pagina web de Lamparas. 
-Autores: Barreyro Fernando, Gonzalez Ramsés y Damian Pelisare #
+# Pagina web de Lamparas. #
+Autores: Barreyro Fernando, Gonzalez Ramsés y Damian Pelisare 
 
 ## Descarga ##
 Desde una consola o el bash de git usar el siguiente comando:
