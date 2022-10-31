@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="Img/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/0a0b671341.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <title>Regulux Lamps</title>
 </head>
 
@@ -20,60 +19,84 @@
                 <ul class="header__ul">
                     <li class="header__li" id="header__li--active"><a class="nav__a--nav" href="index.html">Home</a></li>
                     <li class="header__li"><a class="nav__a--nav" href="articulos.html">Trabajos </a></li>
-                    <li class="header__li"><a class="nav__a--nav" href="nosotros.html">Acerca </a></li>
-                    <li class="header__li"><a class="nav__a--nav" href="contact.html">Contacto </a></li>
+                    <li class="header__li"><a class="nav__a--nav" href="acerca.html">Acerca </a></li>
+                    <li class="header__li"><a class="nav__a--nav" href="contacto.html">Contacto </a></li>
                 </ul>
             </nav>
         </header>
 
 		<main class="main__formulario">
-			<form class="main__form">
+			
+			<form action="" class="formulario" id="formulario">
 				<div class="formulario-1">
 					<h3>Formulario de Contacto</h3>
 					<hr>
 					<p class="forumario-1__p">Por favor, Ingrese sus datos y envienos su Consulta.</p> <br>
 				</div>
-
-				<div class="formulario-general">
-					<div class="formulario-2 form__child">
-						<label for="nombre"> Nombre:</label>
-						<input type="text"  id="nombre" maxlength="50" name="nombre" placeholder="Ingrese su Nombre Aqui">
-					</div> <br>
-
-					<div class="formulario-3 form__child">
-						<label class="form__child--label" for="apellido"> Apellido:</label>
-						<input type="text" id="apellido"  maxlength="50" name="apellido" placeholder="Ingrese su Apellido Aqui">
-					</div> <br>
-
-					<div class="formulario1-4 form__child">
-						<label class="form__child--label" for="contacto">Número de Telefono:</label>
-						<input type="number" id="contacto"  maxlength="50" name="contacto"  placeholder="Ingrese su Número Aqui">
-					</div> <br>
-
-					<div class="formulario-5 form__child">
-						<label class="form__child--label" for="email"> E-mail:</label>
-						<input type="email"  id="email" name="email" placeholder="Ingrese su E-mail Aqui">
-					</div> <br>
-
-					<div class="formulario-6 form__child">
-						<p class="form__child__p">Seleccione un horario, para que nos comuniquemos telefonicamente:</p>
-						<input type="radio" name="horario" value="mañana"> De 9:00 A 12:00Hs
-						<input type="radio" name="horario" value="mediodia"> De 12:00 A 14:00Hs
-						<input type="radio" name="horario" value="tarde"> De 14:00 A 18:00Hs<br>
+				<!-- Grupo: Nombre -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="usuario" class="formulario__label">Nombre</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese nombre">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
 					</div>
+					<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
 				</div>
-
-				<div class="formulario-7 form__child">
-					<p class="form__child__p">Escriba su Mensaje:</p>
-					<label class="form__child--label" for="texto-formulario" > </label>
-					<textarea class="texto-formulario" name="texto-formulario" placeholder="Ingrese su Mensaje Aqui"
+	
+				<!-- Grupo: Gonzalez -->
+				<div class="formulario__grupo" id="grupo__apellido">
+					<label for="nombre" class="formulario__label">Apellido</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener letras..</p>
+				</div>
+	
+				<!-- Grupo: Correo Electronico -->
+				<div class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label">Correo Electrónico</label>
+					<div class="formulario__grupo-input">
+						<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+				</div>
+	
+				<!-- Grupo: Teléfono -->
+				<div class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario__label">Teléfono</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				</div>	
+				<!-- Mensaje -->
+				<div class="formulario__grupo">
+					<p class="formulario__label" id="text">Escriba su Mensaje:</p>
+					<label class="formulario__grupo-text" for="textoformulario" > </label>
+					<textarea class="texto-formulario" name="observaciones" placeholder="Ingrese su Mensaje Aqui"
 					maxlength="300" ></textarea>
 				</div>
-				<div class="button">
-					<button type="submit" class="button__submit">Enviar</button>
-					<button type="reset" class="button__reset">Borrar</button>
+				<!-- Grupo: Terminos y Condiciones -->
+				<div class="formulario__grupo" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+						Acepto los Terminos y Condiciones
+					</label>
+				</div>
+	
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+				</div>
+	
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 				</div>
 			</form>
+
 			<section class="main__nosotros nosotros">
 				<div>
 					<h2 class="nosotros__h2">Familia Regulux</h2>
@@ -95,13 +118,21 @@
 			<div class="footer__copyright">
 				<h4 class="footer__h4--copyright">&copy; 2022 GRUPO 14 desarrollos digitales</h4>
 			</div>
+			<ul class="ciudades">
+				<li class="ciudades__li">
+					<span id="ciudad"></span>
+					<span id="temperatura"></span>
+					<span id="descripcion"></span>
+				</li>
+			</ul>
 			<div class="footer__socialnetwork">
 				<a href="https://www.instagram.com/reguluxlamps" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
 				<a href="#" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-pinterest fa-1x"></i></a>
 			</div>
 	</footer>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>	
 </body>
 </html>
 

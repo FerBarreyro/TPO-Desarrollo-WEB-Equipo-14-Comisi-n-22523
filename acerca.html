@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="Img/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/0a0b671341.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <title>Regulux Lamps</title>
 </head>
 
@@ -22,7 +21,7 @@
                     <ul class="header__ul">
                         <li class="header__li" id="header__li--active"><a class="nav__a--nav" href="index.html">Home</a></li>
                         <li class="header__li"><a class="nav__a--nav" href="articulos.html">Trabajos </a></li>
-                        <li class="header__li"><a class="nav__a--nav" href="nosotros.html">Acerca </a></li>
+                        <li class="header__li"><a class="nav__a--nav" href="acerca.html">Acerca </a></li>
                         <li class="header__li"><a class="nav__a--nav" href="contacto.html">Contacto </a></li>
                     </ul>
                 </nav>
@@ -35,22 +34,30 @@
                     <p class="nosotros__p">Somos un equipo colaborativo que se encarga de diseñar, recolectar los materiales y producir las piezas. Creemos que el trabajo unido y en pos de un resultado es importante para el desarrollo de productos de calidad.</p>
                 </div>
                 <figure class="nosotros__figure">
-                    <img class="nosotros__img"src="img/fondos/imagen_persontrabajando.jpg" alt="imagen de persona trabajando">
-                    <img class="nosotros__img"src="img/fondos/imagen_taller.JPG" alt="imagen de escritorio de trabajo">
+                    <img class="nosotros__img"src="/img/fondos/imagen_persontrabajando.jpg" alt="imagen de persona trabajando">
+                    <img class="nosotros__img"src="/img/fondos/imagen_taller.JPG" alt="imagen de escritorio de trabajo">
                 </figure>
             </main>
     
             <footer class="footer">
-                    <div class="footer__title">
-                        <h3 class="footer__h3--title">REGULUX LAMPS</h3>
-                    </div>
-                    <div class="footer__copyright">
-                        <h4 class="footer__h4--copyright">&copy; 2022 GRUPO 14 desarrollos digitales</h4>
-                    </div>
-                    <div class="footer__socialnetwork">
-                        <a href="https://www.instagram.com/reguluxlamps" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
-                        <a href="#" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-pinterest fa-1x"></i></a>
-                    </div>
+                <div class="footer__title">
+                    <h3 class="footer__h3--title">REGULUX LAMPS</h3>
+                </div>
+                <div class="footer__copyright">
+                    <h4 class="footer__h4--copyright">&copy; 2022 GRUPO 14 desarrollos digitales</h4>
+                </div>
+                <ul class="ciudades">
+                    <li class="ciudades__li">
+                        <span id="ciudad"></span>
+                        <span id="temperatura"></span>
+                        <span id="descripcion"></span>
+                    </li>
+                </ul>
+                <div class="footer__socialnetwork">
+                    <a href="https://www.instagram.com/reguluxlamps" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
+                    <a href="#" class="footer__a--socialnetwork" target="_blank"><i class="fa-brands fa-pinterest fa-1x"></i></a>
+                </div>
             </footer>
-        </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="js/script.js"></script>	
 </body>
